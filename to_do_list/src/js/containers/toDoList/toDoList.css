@@ -1,0 +1,19 @@
+.toDoList{
+    position: relative;
+    margin-top: calc(-100vh + 240px);
+    left: 330px;
+    width: calc(100vw - 390px);
+    height: calc(100vh - 250px);
+    overflow-y: scroll;
+}
+.toDoList section{
+    padding: 8px 0;
+}
+.toDoList section:hover
+{
+    background-color: #e7eaec;
+}
+.toDoList section:not(:first-of-type){
+    border-top: 1px solid #ddd;
+    padding-top: 10px;
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Elkin's Game</title>
+        <link href="css/reset.css" rel="stylesheet" media="screen">
+        <link href="css/game.css" rel="stylesheet" media="screen">
+    </head>
+    <body>
+        <audio autoplay loop>
+            <source src="audio/music.mp3" type="audio/mpeg">
+        </audio>
+        <header>
+            <div id="game-status"></div>
+            <div id="level-selector">
+                <span>Level:</span>
+                <ul>
+                    <li data-level="1" class="selected">1</li>
+                    <li data-level="2" class="locked">2</li>
+                    <li data-level="3" class="locked">3</li>
+                    <li data-level="4" class="locked">4</li>
+                    <li data-level="5" class="locked">5</li>
+                    <li data-level="6" class="locked">6</li>
+                    <li data-level="7" class="locked">7</li>
+                    <li data-level="8" class="locked">8</li>
+                    <li data-level="9" class="locked">9</li>
+                </ul>
+            </div>
+        </header>
+        <div id="game">
+            <a id="start-button" class="button">Start</a>
+            <canvas id="world"></canvas>
+        </div>
+        <script src="js/game.js"></script>
+    </body>
+</html>

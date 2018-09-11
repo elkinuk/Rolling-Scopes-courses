@@ -1,0 +1,436 @@
+@font-face {
+    font-family: "Manifesto";
+    src: url('../media/fonts/Manifesto.ttf');
+}
+@font-face {
+    font-family: "Chava-Regular";
+    src: url('../media/fonts/Chava-Regular.ttf');
+}
+* {
+    box-sizing: border-box;
+}
+body {
+    background-color: #333;
+    font-family: Helvetica;
+    color: #FFF;
+}
+header,
+footer {
+    width: 100%;
+    height: 40px;
+    background-color: #252525;
+    padding: 10px 0;
+}
+main {
+    min-height: calc(100vh - 160px);
+}
+big {
+    font-size: 2em;
+}
+.container {
+    margin: 0 40px;
+}
+.game {
+    --card-back: url("../media/img/back/card_back_1.gif");
+}
+.btn{
+    border: none;
+    display: block;
+    margin: 10px auto;
+    text-decoration: none;
+    text-align: center;
+    padding: 10px 0px;
+    width: 110px;
+    background-color: #333;
+    color: #fff;
+}
+.btn:hover{
+    box-shadow: 0px 0px 20px -3px rgba(0, 0, 0, 0.9);
+}
+/************************HEADER*****************************/
+header .btn{
+    display: inline-block;
+    margin: 0 20px;
+    padding: 2px 0;
+    width: 80px;
+    font-weight: 200;
+}
+header .game-data{
+    display: inline-block;
+    float: right;
+}
+header .game-data p{
+    display: inline;
+    margin: 0 20px;
+    color:#656565;
+}
+header .game-data p span{
+    font-weight: 100;
+}
+/**************************LOGO***************************/
+
+.logo {
+    font-family: "Chava-Regular", Helvetica, sans-serif;
+    display: inline-block;
+}
+.logo a {
+    text-decoration: none;
+    color: #fff;
+    font-family: "Manifesto", Helvetica, sans-serif;
+    font-size: 8px;
+    padding-left: 20px;
+}
+.logo a:hover {
+    color: #ccc;
+    cursor: sw-resize;
+}
+/************************MAIN*****************************/
+
+main section {
+    margin: 40px auto;
+    background-color: #444;
+    background-image: url('../media/img/bg.jpg');
+    background-size: cover;
+    border-radius: 2px;
+    text-shadow: 0 1px 0 #fff;
+    width: 900px;
+    height: 500px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+main section
+{
+    position:relative;
+    -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+       -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+            box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+}
+main section:before,
+main section:after{
+    content:"";
+    position:absolute;
+    z-index:-1;
+    -webkit-box-shadow:0 0 20px rgba(0,0,0,0.8);
+    -moz-box-shadow:0 0 20px rgba(0,0,0,0.8);
+    box-shadow:0 0 20px rgba(0,0,0,0.8);
+    top:0;
+    bottom:0;
+    left:10px;
+    right:10px;
+    -moz-border-radius:100px / 10px;
+    border-radius:100px / 10px;
+}
+main section:after
+{
+    right:10px;
+    left:auto;
+    -webkit-transform:skew(8deg) rotate(3deg);
+       -moz-transform:skew(8deg) rotate(3deg);
+        -ms-transform:skew(8deg) rotate(3deg);
+         -o-transform:skew(8deg) rotate(3deg);
+            transform:skew(8deg) rotate(3deg);
+}
+
+.row {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.card {
+    border-radius: 7px;
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0);
+    background-image: var(--card-back);
+    background-size: 85px 120px;
+    width: 85px;
+    height: 120px;
+    box-shadow: 11px 18px 46px -3px rgba(0, 0, 0, 0.9);
+}
+.card:hover {
+    cursor: grab;
+}
+.card:active {
+    cursor: grabbing;
+}
+.card_0 {
+    --card-front: url("../media/img/front/card_front_0.png");
+}
+.card_1 {
+    --card-front: url("../media/img/front/card_front_1.png");
+}
+.card_2 {
+    --card-front: url("../media/img/front/card_front_2.png");
+}
+.card_3 {
+    --card-front: url("../media/img/front/card_front_3.png");
+}
+.card_4 {
+    --card-front: url("../media/img/front/card_front_4.png");
+}
+.card_5 {
+    --card-front: url("../media/img/front/card_front_5.png");
+}
+.card_6 {
+    --card-front: url("../media/img/front/card_front_6.png");
+}
+.card_7 {
+    --card-front: url("../media/img/front/card_front_7.png");
+}
+.card_8 {
+    --card-front: url("../media/img/front/card_front_8.png");
+}
+.card_9 {
+    --card-front: url("../media/img/front/card_front_9.png");
+}
+.card_10 {
+    --card-front: url("../media/img/front/card_front_10.png");
+}
+.card_11 {
+    --card-front: url("../media/img/front/card_front_11.png");
+}
+/*************************FOOTER****************************/
+
+footer {
+    font-size: 12px;
+    color: #444;
+    text-align: center;
+    padding: 13px 0;
+}
+/*************************MODALS****************************/
+.modalDialog {
+	position: fixed;
+	font-family: Helvetica, sans-serif;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: rgba(0,0,0,0.5);
+	display: none;
+	pointer-events: none;
+}
+.modalDialog:target {
+	display: block;
+	pointer-events: auto;
+}
+.modalDialog > section {
+    font-size: 14px;
+    color: #333;
+	width: 620px;
+    max-height: 320px;
+	position: relative;
+	margin: 10% auto;
+	padding: 5px 20px 13px 20px;
+	background: #fff;
+    background: linear-gradient(45deg, #deddc3, #424b4e);
+    overflow-y: scroll;
+    box-shadow:
+   0 1px 4px rgba(0, 0, 0, .5),
+   -23px 0 20px -23px rgba(0, 0, 0, 1),
+   23px 0 20px -23px rgba(0, 0, 0, 1),
+   0 0 40px rgba(0, 0, 0, .3) inset;
+}
+.modalDialog > section h1{
+    text-align: center;
+    font-size: 30px;
+}
+.modalDialog > section h1.logo{
+    display: block;
+}
+ul {
+    list-style-image: url(../media/img/ul.png);
+   }
+ul li{
+    letter-spacing: 0.5px;
+    margin: 10px 0;
+    font-weight: 100;
+}
+.modalDialog > section article{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.modalDialog > section h3,
+.modalDialog > section h2{
+    text-align: center;
+}
+.modalDialog > section a{
+    margin: 25px auto;
+}
+.modalDialog > section .choose_back{
+    border: none;
+    background-size: 72px 105px;
+    border-radius: 4px;
+    width: 72px;
+    height: 105px;
+    margin: 5px 12px;
+}
+.modalDialog > section .choose_back[value="1"]{
+    background-image: url("../media/img/back/card_back_1.gif");
+}
+.modalDialog > section .choose_back[value="2"]{
+    background-image: url("../media/img/back/card_back_2.gif");
+}
+.modalDialog > section .choose_back[value="3"]{
+    background-image: url("../media/img/back/card_back_3.gif");
+}
+.modalDialog > section .choose_back[value="4"]{
+    background-image: url("../media/img/back/card_back_4.gif");
+}
+.modalDialog > section .choose_back[value="5"]{
+    background-image: url("../media/img/back/card_back_5.gif");
+}
+.modalDialog > section .choose_back[value="6"]{
+    background-image: url("../media/img/back/card_back_6.gif");
+}
+/*Animation*/
+
+@keyframes flipOut {
+    from {
+        transform: perspective(400px) rotate3d(0, 1, 0, 180deg);
+        background-image: var(--card-front);
+    }
+    40% {
+        transform: perspective(400px) rotate3d(0, 1, 0, 100deg);
+    }
+    90% {
+        transform: perspective(400px) rotate3d(0, 1, 0, -10deg);
+    }
+    to {
+        transform: perspective(400px);
+        background-image: var(--card-back);
+    }
+}
+@keyframes flipIn {
+    from {
+        transform: perspective(400px);
+    }
+    40% {
+        transform: perspective(400px) rotate3d(0, 1, 0, 90deg);
+    }
+    90% {
+        transform: perspective(400px) rotate3d(0, 1, 0, 190deg);
+        background-image: var(--card-front);
+    }
+    to {
+        transform: perspective(400px) rotate3d(0, 1, 0, 180deg);
+        background-image: var(--card-front);
+    }
+}
+@keyframes flipInOut {
+    from {
+        transform: perspective(400px);
+        background-image: var(--card-back);
+    }
+    20% {
+        transform: perspective(400px) rotate3d(0, 1, 0, 90deg);
+    }
+    40% {
+        transform: perspective(400px) rotate3d(0, 1, 0, 190deg);
+        background-image: var(--card-front);
+    }
+    45% {
+        transform: perspective(400px) rotate3d(0, 1, 0, 180deg);
+        background-image: var(--card-front);
+    }
+    55% {
+        transform: perspective(400px) rotate3d(0, 1, 0, 180deg);
+        background-image: var(--card-front);
+    }
+    60% {
+        transform: perspective(400px) rotate3d(0, 1, 0, 100deg);
+        background-image: var(--card-back);
+    }
+    90% {
+        transform: perspective(400px) rotate3d(0, 1, 0, -10deg);
+        background-image: var(--card-back);
+    }
+    to {
+        transform: perspective(400px);
+        background-image: var(--card-back);
+    }
+}
+@keyframes showAndRemove {
+    from {
+        background-image: var(--card-back);
+        transform: perspective(400px);
+    }
+    20% {
+        transform: perspective(400px) rotate3d(0, 1, 0, 90deg);
+    }
+    60% {
+        background-image: var(--card-front);
+        transform: perspective(400px) rotate3d(0, 1, 0, 190deg);
+    }
+    70% {
+        background-image: var(--card-front);
+        transform: perspective(400px) rotate3d(0, 1, 0, 180deg);
+        opacity: 1;
+    }
+    to {
+        background-image: var(--card-front);
+        opacity: 0;
+        visibility: hidden;
+        transform: translate3d(100%, 0, 0) rotate3d(0, 0, 1, 120deg);
+    }
+}
+@keyframes getOut {
+    from {
+        transform: rotate3d(0, 1, 0, 180deg);
+        background-image: var(--card-front);
+        opacity: 1;
+    }
+    to {
+        background-image: var(--card-front);
+        opacity: 0;
+        visibility: hidden;
+        transform: translate3d(100%, 0, 0) rotate3d(0, 0, 1, 120deg);
+    }
+}
+@keyframes move {
+    from {
+        transform: scale3d(1, 1, 1);
+    }
+    50% {
+        transform: scale3d(1.05, 1.05, 1.05);
+    }
+    to {
+        transform: scale3d(1, 1, 1);
+    }
+}
+.flipOut,
+.flipIn,
+.getOut,
+.move,
+.showAndRemove {
+    animation-duration: 0.8s;
+    animation-fill-mode: both;
+}
+.flipInOut {
+    animation-duration: 2s;
+    animation-name: flipInOut;
+}
+.move {
+    animation: move 6s infinite linear;
+    animation-timing-function: cubic-bezier(.24, 1.59, .29, -0.48);
+}
+.flipIn {
+    animation-duration: 0.7s;
+    animation-name: flipIn;
+}
+.flipOut {
+    animation-name: flipOut;
+    animation-delay: 0.5s;
+}
+.getOut {
+    animation-name: getOut;
+    animation-delay: 0.7s;
+}
+.showAndRemove {
+    animation-name: showAndRemove;
+    animation-duration: 1.2s;
+}

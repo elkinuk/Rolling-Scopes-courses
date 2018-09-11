@@ -1,0 +1,41 @@
+.input-block {
+  width: 100%;
+  max-width: 270px;
+  padding: 15px 15px 15px 15px;
+  background: #e7eaec;
+}
+
+.input-block input {
+  color: #919FAF;
+  font-size: 16px;
+  line-height: 25px;
+  vertical-align: middle;
+  border-style: none;
+  background: transparent;
+  outline: none;
+}
+.input-block input::-webkit-input-placeholder {
+  color: #919FAF;
+}
+.input-block button {
+    padding: 0;
+    background: none;
+    border: none;
+    outline: none;
+  color: #919FAF;
+  font-size: 20px;
+  line-height: 24px;
+  vertical-align: middle;
+  -webkit-transition: color .25s;
+  transition: color .25s;
+  text-transform: uppercase;
+}
+.input-block button:hover {
+  color: #638ec0;
+}
+@media (max-width: 767px){  /*iPhone*/
+
+    .input-block{
+        margin-top: 10px;
+    }
+}

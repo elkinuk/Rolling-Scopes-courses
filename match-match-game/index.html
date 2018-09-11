@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Match-match game by Elkin</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/7.0.0/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">Match-match game<a href="https://github.com/elkinny"> by <big>Elkin</big></a></div>
+            <a href="#startPage" class="btn" id="menuBtn">Menu</a>
+            <div class="game-data">
+                <p>Clicks: <span id="clicks">0</span></p>
+                <p>Time: <span id="time" class="stopwatch"></span></p>
+            </div>
+        </div>
+        <nav class="controls">
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <section class="game-field"></section>
+        </div>
+    </main>
+    <footer>
+        <small>Copyright © 2017, Budyonnaya Victoria. All rights reserved.</small>
+    </footer>
+
+    <div id="startPage" class="modalDialog">
+        <section>
+            <h1 class="logo">Match-match game</h1>
+            <h2>How to play</h2>
+            <ul>
+                <li>The player chooses a card and turns it over.</li>
+                <li>Then he selects another card and turns it over.</li>
+                <li>If the two cards are a matching pair, for example two Templar Assassins, then he take this two cards and choose another pair card.</li>
+                <ul>
+                    <li>If the cards are not a match they are turned back over and choose another pair.</li>
+                    <li>The game continues in this fashion until all the cards are played.</li>
+                </ul>
+            </ul>
+            <h3>Choose the difficulty</h3>
+            <article class="size_article">
+                <button value="4" class="choose_size btn">8 x 3</button>
+                <button value="3" class="choose_size btn">6 x 3</button>
+                <button value="2" class="choose_size btn">4 x 3</button>
+                <button value="1" class="choose_size btn">2 x 3</button>
+            </article>
+            <h3>Choose the cards skirt</h3>
+            <article class="back_article">
+                <button value="1" class="choose_back"></button>
+                <button value="2" class="choose_back"></button>
+                <button value="3" class="choose_back"></button>
+                <button value="4" class="choose_back"></button>
+                <button value="5" class="choose_back"></button>
+                <button value="6" class="choose_back"></button>
+            </article>
+            <a href="#" title="Start" class="btn" id="startBtn">Start</a>
+        </section>
+    </div>
+    <div id="winPage" class="modalDialog">
+        <section>
+            <h1>You rock!</h1>
+            <h3>Congratulations! You passed the game</h3>
+            <a title="Start" id="playAgain" class="btn">Play again</a>
+        </section>
+    </div>
+    <script src="index.js"></script>
+
+
+</body>
+
+</html>

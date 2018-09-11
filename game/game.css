@@ -1,0 +1,141 @@
+html, body {
+	background-image: url(../img/bg.jpg);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 12px;
+	height: 100%;
+	overflow: hidden;
+}
+
+header {
+	background-color: #000;
+	color: #999;
+	height: 27px;
+	margin: 0;
+	opacity: 0.4;
+	overflow: hidden;
+	padding: 0 8px 8px 8px;
+	position: relative;
+	width: 100%;
+	z-index: 5;
+	transition: height .22s ease-out;
+}
+
+#game-status {
+	display: none;
+	height: 15px;
+	padding: 7px 0;
+	width: 984px;
+	z-index: 2;
+}
+
+#game-status span {
+	color: #777;
+	font-weight: bold;
+	margin-right: 5px;
+}
+
+#game-status span:first-of-type {
+	color: #555;
+	font-size: 15px;
+}
+
+#game {
+	left: 50%;
+	margin-left: -500px;
+	margin-top: -317px;
+	position: relative;
+	top: 50%;
+	z-index: 1;
+}
+
+#menu {
+	display: block;
+	left: 6px;
+	margin-top: 10px;
+	padding: 16px;
+	position: absolute;
+	top: 150px;
+	width: 240px;
+	z-index: 3;
+}
+
+#level-selector {
+	font-size: 11px;
+	margin: 12px 10px;
+	position: absolute;
+	right: 9px;
+}
+
+#level-selector ul {
+	display: inline;
+	margin: 10px 0;
+	padding: 4px;
+}
+
+#level-selector ul li {
+	background-color: #333;
+	border-radius: 1px;
+	color: #fff;
+	cursor: pointer;
+	display: inline;
+	margin: 1px;
+	padding: 5px;
+	transition: all .1s ease-out;
+}
+
+#level-selector ul li.unlocked:hover {
+	background: #555;
+}
+
+#level-selector ul li.selected {
+	background: #999;
+	cursor: default;
+	padding: 5px 9px;
+}
+
+#level-selector ul li.locked {
+	color: #555;
+	cursor: default;
+	opacity: 0.5;
+}
+
+.button {
+	font-family: Helvetica;
+	outline: none;
+	text-decoration: none;
+	transition: all .18s linear;
+}
+
+#start-button {
+	color: rgba(200,200,200,0.5);
+	display: block;
+	font-family: "HelveticaNeue-Thin","Helvetica Neue Thin", Helvetica;
+	font-size: 120px;
+	left: 20px;
+	margin-top: 10px;
+	padding: 16px;
+	padding: 2px;
+	position: absolute;
+	top: 150px;
+	width: 240px;
+	z-index: 3;
+}
+
+#start-button:hover{
+	color: #fff;
+	transition: all .18s linear;
+}
+
+canvas {
+	background-color: rgba(0,0,0,0.7);
+	border: 0px;
+	border-radius: 4px;
+	cursor: default;
+	display: block;
+	height: 600px;
+	width: 1000px;
+}

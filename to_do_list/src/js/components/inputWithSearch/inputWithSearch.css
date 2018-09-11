@@ -1,0 +1,69 @@
+
+.search-block {
+  position: relative;
+  background: #919FAF;
+  border-radius: 20px;
+  transform-origin: 100% 50%;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  -webkit-transition: 250ms ease;
+  transition: 250ms ease;
+  margin: 20px;
+}
+.search-block:hover{
+  width: 200px;
+}
+.search-block:hover input,
+.search-block input:active {
+  padding: 0 40px 0 13px;
+  width: 76%;
+  transform: scale(1);
+}
+.search-block input {
+  background: transparent;
+  border: 0;
+  color: #fff;
+  outline: none;
+  height: 40px;
+  width: 0;
+  overflow: hidden;
+  font-weight: 100;
+  font-size: 18px;
+  transform: scale(0);
+  transform-origin: 0 50%;
+  transition: 275ms ease;
+}
+.search-block input::-webkit-input-placeholder {
+  color: #cdd7e2;
+}
+.search-block input:-ms-input-placeholder {
+  color: #cdd7e2;
+}
+.search-block input::-ms-input-placeholder {
+  color: #cdd7e2;
+}
+.search-block input::placeholder {
+  color: #cdd7e2;
+}
+.search-block i,
+.search-block .icon-button.search {
+  position: absolute;
+  color: white;
+  font-size: 18px;
+  top: 50%;
+  right: 13px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+.icon-button.search i{
+    top:auto;
+    left: 8px;
+    color: white;
+}
+
+@media (max-width: 767px){  /*iPhone*/
+    .search-block{
+        margin:0;
+    }
+}

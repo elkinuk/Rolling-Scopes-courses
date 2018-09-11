@@ -1,0 +1,96 @@
+<!-- Задайте высоту для body в 2000 пикселей, чтобы появилась
+полоса прокрутки. Центральный блок состоит из 3 дивов разных
+цветов выровнен по центру страницы слева и справа. Правый нижний
+блок с иконками зафиксирован снизу справа и остается при
+прокрутке экрана. Верстка должна соответствовать макету. Не
+Pixel Perfect, но размеры должны быть соблюдены. Картинки для
+страницы желательно брать те, что на макете. Нельзя использовать
+препроцессоры, фреймворки и т.п. Только чистый HTML и CSS
+Для скругления элементов использовать полученные знания о CSS3
+4 блока с CSS шутками - простые картинки-->
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <div id="main_block">
+      <div class="block" id="third_block">
+        <div class="bookmark" id="third_bookmark"></div>
+      </div>
+
+      <div class="block" id="second_block">
+        <div class="bookmark" id="second_bookmark"></div>
+      </div>
+
+      <div class="block" id="firs_block">
+        <div class="bookmark" id="firs_bookmark"></div>
+        <h1>Lorem ipsum dolor sit amet</h1>
+        <section>
+          <img src="img/cup.jpg" alt="cup" id="cup">
+          <article>
+            Lorem ipsum dolor sit amet, ius posse noster et, mei delicata
+            reformidans at. Mazim suavitate interesset et qui. Id pro timeam
+            fabellas. Pri ipsum audire vivendum cu, vel argumentum temporibus
+            at. Qui ei latine tamquam delenit, eos ad natum sanctus dolorum,
+            numquam admodum intellegebat at pro.Ex utinam iudicabit tincidunt
+            mea, mel regione percipit ex, est an volutpat mnesarchum.Ex
+            intellegam definitiones ius. <br>Et putant adipisci mea, utroque
+            concludaturque cum ut, vidit tractatos has an. Commune singulis
+            petentium et quo, mea feugiat luptatum eu. Natum periculis vis ad.
+            Per option aliquid labores at. Sed in consul laudem fierent.
+          </article>
+        </section>
+
+        <section>
+          <img src="img/list.jpg" alt="list" id="list">
+          <article>
+            Quo purto eros ei, ea viderer gubergren vix. Soluta eripuit blandit
+            quo te, ad purto inani possit his, quis utinam cum ad. Partem graece
+            eu, ut vis albucius honestatis, ei facilis repudiare eum. Malorum
+            delenit interesset eum ut, nibh error oporteat ei his.Vis nusquam
+            offendit voluptatum ea, eligendi iracundia eu sea. Eum ne justo
+            facete, quo vide efficiantur an, vim no justo menandri expetenda.
+            Albucius perfecto eam in.
+          </article>
+        </section>
+
+        <section>
+          <h2>Sea ex scaevola vivendum facilisi eum ut, nibh error</h2>
+          <div class="quote" id="first_quote">
+						<img src="img/icon1.png" alt="icon1" class="icon">
+						<img src="img/quote1.jpg" alt="quote1" class="quote_text">
+          </div>
+          <div class="quote" id="second_quote">
+						<img src="img/icon2.png" alt="icon2" class="icon">
+						<img src="img/quote2.jpg" alt="quote2" class="quote_text">
+          </div>
+          <div class="quote" id="third_quote">
+						<img src="img/icon3.png" alt="icon3" class="icon">
+						<img src="img/quote3.jpg" alt="quote3" class="quote_text">
+          </div>
+          <div class="quote" id="fourth_quote">
+						<img src="img/icon4.png" alt="icon4" class="icon">
+						<img src="img/quote4.jpg" alt="quote4" class="quote_text">
+          </div>
+        </section>
+
+				<footer>
+	        Quo purto eros ei, ea viderer gubergren vix. Soluta eripuit blandit
+	        quo te, ad purto inani possit his, quis utinam cum ad. Partem graece
+	        eu, ut vis albucius honestatis, ei facilis repudiare eum. Malorum
+	        delenit interesset eum ut
+	      </footer>
+      </div>
+    </div>
+
+		<div id="media">
+			<h3>Share this</h3>
+			<img src="img/media1.jpg" alt="inst" class="media_img">
+			<img src="img/media2.jpg" alt="fb" class="media_img">
+			<img src="img/media3.jpg" alt="tw" class="media_img">
+		</div>
+  </body>
+</html>

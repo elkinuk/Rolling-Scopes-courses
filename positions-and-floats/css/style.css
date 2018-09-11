@@ -1,0 +1,158 @@
+body {
+
+  height: 2000px;
+  background-color: #fff;
+  box-sizing: border-box;
+  font-family:"Myriad Pro";
+  font-size: 13px;
+}
+
+h1{
+  font-size: 25px;
+  font-weight: normal;
+}
+
+h2{
+  font-size: 20px;
+  font-weight: normal;
+}
+
+h3{
+  font-size: 15px;
+  font-weight: normal;
+}
+
+section + section{
+  padding-top: 10px;
+  display: inline-block;
+}
+
+div{
+  position: absolute;
+}
+
+div .block{
+  height: 750px;
+  width: 520px;
+  border: 2px solid;
+  padding: 30px;
+}
+
+#main_block{
+  top: 200px;
+  width: 625px;
+  margin:200px auto;
+  position:static;
+}
+
+#firs_block{
+  background-color: #EBEBEB;
+}
+
+#second_block{
+  background-color: #CCCCCC;
+  margin: 20px 0px 0px 20px;
+}
+
+#third_block{
+  background-color: #ACACAC;
+  margin: 40px 0px 0px 40px;
+}
+
+div .bookmark{
+  height: 35px;
+  width: 110px;
+  border: 2px solid;
+  top: 5%;
+  border-bottom-right-radius: 10px 10px;
+  border-top-right-radius: 10px 10px
+}
+
+#firs_bookmark{
+  background-color: #f68e56;
+  left: 95%;
+}
+
+#second_bookmark{
+  background-color: #39b54a;
+  left: 89%;
+}
+
+#third_bookmark{
+  background-color: #00aeef;
+  left: 83%;
+}
+
+#cup{
+  height: 100px;
+  float: left;
+  margin: 0 20px 10px 0;
+}
+
+#list{
+  height: 135px;
+  float: right;
+  margin: 0 0 0 20px;
+}
+
+div .quote{
+  width: 200px;
+  height: 90px;
+  position: static;
+  margin: 0 0 20px 0;
+  text-align: center;
+}
+
+#first_quote{
+  background-color: #20ce6d;
+  float: left;
+}
+
+#second_quote{
+  background-color: #3a8fba;
+  float: right;
+}
+
+#third_quote{
+  background-color: #61ca9b;
+  float: left;
+}
+
+#fourth_quote{
+  background-color: #f36a71;
+  float: right;
+}
+
+.icon{
+  width: 25px;
+  border-radius:50%;
+  margin-top: 5px;
+}
+
+.quote_text{
+  width: 190px;
+  margin-top: 10px;
+}
+
+footer{
+    font-size: 10px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+#media {
+  width: 90px;
+  height: 70px;
+  background-color: #fbaf5d;
+  border: 1px solid;
+  position: fixed;
+  right: 0%;
+  top: 70%;
+  text-align: center;
+}
+
+.media_img{
+  border-radius: 50%;
+  width: 20px;
+  margin-top: -30px;
+}
