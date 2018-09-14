@@ -1,8 +1,0 @@
-
-aside{
-    max-width: 300px;
-    border-right: 1px solid #ddd;
-    padding: 5px 10px 5px 0;
-    height: calc(100vh - 250px);
-    overflow-y: scroll;
-}
