@@ -47,7 +47,7 @@
 
 * Final JS task [Simple game](https://elkinny.github.io/Rolling-Scopes-courses/game/) - [GitHub link](https://github.com/elkinny/Rolling-Scopes-courses/tree/master/game)
 
-Native JS 3D-game [Slender](https://dmitry-white.github.io/Slender/) - [GitHub link](https://github.com/Dmitry-White/Slender)
+* Native JS 3D-game [Slender](https://dmitry-white.github.io/Slender/) - [GitHub link](https://github.com/Dmitry-White/Slender)
 
 ### Projects without GUI
 
